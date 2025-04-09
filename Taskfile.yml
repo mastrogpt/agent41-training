@@ -1,0 +1,18 @@
+version: 3
+vars: 
+  DRY: echo
+
+tasks:
+  default: ops -task -t Taskfile.yml --list-all
+
+  starter:
+   desc: copy to starter (DRY=<empty> to go)
+   cmds:
+   - |
+    cat starter.list | while read line
+    do 
+      DIR=../agenta41-starter/$(dirname $line)
+      FILE=$(basename $line)
+      {{.DRY}} mkdir -p $DIR
+      {{.DRY}} cp -v $line $DIR/$FILE
+    done
