@@ -11,7 +11,7 @@ tasks:
    - |
     cat starter.list | while read line
     do 
-      DIR=../agenta41-starter/$(dirname $line)
+      DIR=../agent41-starter/$(dirname $line)
       FILE=$(basename $line)
       {{.DRY}} mkdir -p $DIR
       {{.DRY}} cp -v $line $DIR/$FILE
