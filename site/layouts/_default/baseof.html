@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html class="h-full bg-white">
+
+<head>
+  {{ partial "head.html" . }}
+</head>
+
+<body class="h-full">
+  <div>
+    {{ partial "sidebar.html" . }}
+    <div class="lg:pl-72">
+      {{ partial "header.html" . }}
+      <main class="py-10">
+        <div class="px-4 sm:px-6 lg:px-8">
+          {{ block "main" . }}{{ end }}
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+
+</html>

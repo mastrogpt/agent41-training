@@ -1,0 +1,6 @@
+baseURL = 'https://michele.openserverless.dev'
+languageCode = 'en-US'
+title = 'Michele Site'
+
+[markup.goldmark.renderer]
+unsafe = true
