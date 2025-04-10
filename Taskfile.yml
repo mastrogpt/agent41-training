@@ -16,3 +16,6 @@ tasks:
       {{.DRY}} mkdir -p $DIR
       {{.DRY}} cp -v $line $DIR/$FILE
     done
+    if [ "{{.DRY}}" != "" ]; then
+      echo DRY MODE - run with DRY=""
+    fi
