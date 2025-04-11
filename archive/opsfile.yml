@@ -1,0 +1,13 @@
+  app:
+    silent: true
+    dir: $OPS_PWD/app
+    cmds:
+      - uv run flet run --web
+
+  url:
+    desc: OLLAMA_URL
+    cmds:
+      - |
+        #env | grep OPS
+        source $OPS_PWD/packages/.env
+        echo https://$AUTH@$OLLAMA_HOST
