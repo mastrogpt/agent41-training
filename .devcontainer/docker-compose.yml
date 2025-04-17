@@ -1,9 +1,8 @@
 services:
     app:
-      image: sciabarracom/mastrogpt-starter:2501191200
+      image: sciabarracom/agent41-starter:2504170000
       volumes:
         - ../..:/workspaces:cached
-      command: sleep inf
       depends_on:
         - redis
         - etcd

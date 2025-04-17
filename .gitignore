@@ -1,3 +1,4 @@
+*.zip
 attic/
 .DS_Store
 site/public/
