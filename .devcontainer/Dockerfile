@@ -2,7 +2,7 @@ FROM node:22
 # Install basic development tools
 RUN \
      apt update && \
-     apt install -y less man-db sudo vim jq python-is-python3 python3-virtualenv tini
+     apt install -y less man-db sudo vim jq python-is-python3 python3-virtualenv tini pgloader
 
 # Ensure default `node` user has access to `sudo`
 ARG USERNAME=node
