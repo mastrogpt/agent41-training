@@ -1,6 +1,6 @@
 services:
     app:
-      image: sciabarracom/agent41-starter:2504170000
+      image: sciabarracom/agent41-starter:2504190000
       volumes:
         - ../..:/workspaces:cached
       depends_on:
@@ -8,6 +8,7 @@ services:
         - etcd
         - minio
         - milvus
+        - postgres
     redis:
         image: docker.io/valkey/valkey:7
         ports:
@@ -57,9 +58,7 @@ services:
     postgres:
         image: postgres:16
         environment:
-          POSTGRES_USER: pguser
-          POSTGRES_PASSWORD: pgpassword
-          POSTGRES_DB: testdb
+          POSTGRES_PASSWORD: postgres
         volumes:
           - postgres:/var/lib/postgresql/data
         ports:
