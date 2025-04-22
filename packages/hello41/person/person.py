@@ -1,4 +1,4 @@
 def person(args):
-  input = args.get("input", "a nice person")
+  input = args.get("person", "a helpful assistant.")
   output = f"You are {input}"
   return { "output": output }

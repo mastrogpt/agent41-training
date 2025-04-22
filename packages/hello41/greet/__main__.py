@@ -2,7 +2,7 @@
 #-a mcp:type resource
 #-a mcp:resource "greet://{input}"
 #-a mcp:desc "The greeting for a person"
-#-a input:str "the input to echo"
+#-a greet:str "the greeting to use (default='Hello')"
 
 import greet
 def main(args):
