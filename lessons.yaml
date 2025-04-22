@@ -4,20 +4,20 @@
 2-mcp:
   - lessons/2-mcp.md
 
-3-agent:
-  - lessons/3-agent.md
+3-data:
+  - lessons/3-data.md
 
-4-data:
-  - lessons/4-data.md
+4-services:
+  - lessons/4-services.md
 
-5-tool:
-  - lessons/5-tool.md
+5-frontend:
+  - lessons/5-frontend.md
 
 6-funcall:
   - lessons/6-funcall.md
 
-7-frontend:
-  - lessons/7-frontend.md
+7-proxy:
+  - lessons/7-proxy.md
 
 8-install:
   - lessons/8-install.md

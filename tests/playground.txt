@@ -1,0 +1,19 @@
+OPS_PASSWORD=emichel ops ide login michele https://openserverless.dev
+ops action list
+ 
+ops a41 new state --clean=role
+ops a41 new state --clean=load
+ops a41 new state --clean=save
+ops ide undeploy
+ops ide clean
+
+
+
+ops a41 new state "you are the agent saving the state" --prompt=role
+ops a41 new state "read the state" --resource=load
+ops a41 new state "save the state" --tool=save
+ops ide deploy
+ops a41 mcptest state --norun
+
+
+

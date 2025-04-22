@@ -1,6 +1,6 @@
 services:
     app:
-      image: sciabarracom/agent41-starter:2504190000
+      image: sciabarracom/agent41-starter:2504190002
       volumes:
         - ../..:/workspaces:cached
       depends_on:
@@ -56,9 +56,11 @@ services:
         - "etcd"
         - "minio"
     postgres:
-        image: postgres:16
+        image: docker.io/pgvector/pgvector:pg16
         environment:
+          POSTGRES_USER: postgres
           POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: postgres
         volumes:
           - postgres:/var/lib/postgresql/data
         ports:

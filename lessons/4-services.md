@@ -25,3 +25,11 @@ html: true
 
 ---
 
+ops a41 new hn "Get stories from Hacker News."  --tool=get_stories
+ops a41 new hn "Get user info from Hacker News."  --tool=get_user_info
+ops a41 new hn "Search stories from Hacker News."  --tool=search_stories
+ops a41 new hn "Get detailed story info from Hacker News, including the comments"  --tool=get_story_info
+
+
+
+
