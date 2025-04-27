@@ -1,0 +1,49 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Libraries
+
+Do not add a requirements.txt.
+Do not use pip to install other libraries.
+
+Always use the following python libraries and assume the are already available:
+
+- beautifulsoup4
+- ollama
+- openai
+- pymilvus
+- redis
+- pillow
+- nltk
+- httplib2
+- kafka_python
+- python-dateutil
+- requests
+- scrapy==2.5.0
+- simplejson
+- twisted
+- netifaces
+- pyyaml
+- boto3
+- psycopg
+- pymongo
+- minio
+- auth0-python
+- langdetect
+- plotly
+- joblib
+- lightgbm
+- feedparser
+- numpy
+- scikit-learn
+- langchain
+- bcrypt
+- chevron
+
+Implement the function assuming the input is a dict and the result must also be a json serializable dict.
+
+Assume the  the main input is in the field `input` and produce the output in the field `output` in markdown format
+
+You can add additional fields as additional and complex results. Produce a complex output creating an `html` field in html format.

@@ -7,14 +7,14 @@
 3-data:
   - lessons/3-data.md
 
-4-services:
-  - lessons/4-services.md
+4-email:
+  - lessons/4-email.md
 
-5-frontend:
-  - lessons/5-frontend.md
+5-sheet:
+  - lessons/5-sheet.md
 
-6-funcall:
-  - lessons/6-funcall.md
+6-frontend:
+  - lessons/6-frontend.md
 
 7-proxy:
   - lessons/7-proxy.md

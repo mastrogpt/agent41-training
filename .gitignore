@@ -3,3 +3,5 @@ attic/
 .DS_Store
 site/public/
 .venv/
+*.load
+*.sql

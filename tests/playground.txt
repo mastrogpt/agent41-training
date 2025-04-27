@@ -1,13 +1,11 @@
 OPS_PASSWORD=emichel ops ide login michele https://openserverless.dev
 ops action list
  
-ops a41 new state --clean=role
-ops a41 new state --clean=load
-ops a41 new state --clean=save
+!ops a41 new hello41 --clean=dbtool
+!ops a41 new hello41 "database tool" --tool=dbtool --postgres
+
 ops ide undeploy
 ops ide clean
-
-
 
 ops a41 new state "you are the agent saving the state" --prompt=role
 ops a41 new state "read the state" --resource=load
@@ -16,4 +14,8 @@ ops ide deploy
 ops a41 mcptest state --norun
 
 
+create a tool dbquery in package hello41 connecting to database
 
+ ops a41 pg lite2pg address.sqlite
+ ops a41 pg psql "\help"
+ ops a41 pg import address.sqlite

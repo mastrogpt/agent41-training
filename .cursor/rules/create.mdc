@@ -1,0 +1,27 @@
+---
+description: when required to create a tool, an action, a prompt or a resource
+globs: 
+alwaysApply: false
+---
+When requested to create a tool, a resource or a prompt  ask or deduct the <name> and optionally the <package> (assume <package> = <name> if not specified). 
+
+If they ask for a generic action consider it a tool.
+
+Do not use `pip import` or a `requirements.txt`, assume you have the required libraries
+
+Use the command
+
+  ops a41 new <package> <description> (--prompt=<name>|--tool=<name>|--resource=<name>) [--redis] [--postgres] [--milvus] [--s3]
+
+Specify `--postgres` if you need to uses a database
+Specify `--milvus` if you need to use a vector database
+Specify `--s3` if you need to use object storate
+Specify `--redis` if you need to use redis cache
+
+It should generate the files:
+
+- packages/<package>/<name>/__main__.py
+- packages/<package>/<name>/<name>.py
+- tests/<package>/test_<name>.py
+
+

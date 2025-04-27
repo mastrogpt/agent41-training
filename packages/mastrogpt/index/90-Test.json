@@ -6,6 +6,14 @@
    {
     "name": "Demo",
     "url": "mastrogpt/demo"
+   },
+   {
+    "name": "Postgres",
+    "url": "mastrogpt/sql"
+   },
+   {
+    "name": "Redis",
+    "url": "mastrogpt/cache"
    }
 
 ]
