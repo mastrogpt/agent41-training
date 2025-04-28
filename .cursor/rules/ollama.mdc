@@ -3,15 +3,16 @@ description: when required to use ollama
 globs: 
 alwaysApply: false
 ---
-To use ollama, add in the `__main__.py`  the secrets:
+To use ollama, add in  `__main__.py` the metadata to retrive the secrets:
 
-- OLLAMA_HOST
-- AUTH
+#-p OLLAMA_HOST "$OLLAMA_HOST"
+#-p AUTH "$AUTH"
 
-When you need to access Ollama, retrieve the secrets from args and build the url f"https://{AUTH}@{OLLAMA_HOST}"
+When you need to access Ollama, retrieve the secrets from args and build the url f"https://{AUTH}@{OLLAMA_HOST}".
 
-Then use `requests` to invoke the Ollama API.
-By default add stream false to both API requests
+Use requests and the url to invoke the Ollama API.
+
+By default add stream=false to API requests.
 
 
 
