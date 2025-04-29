@@ -1,5 +1,14 @@
 1-vibe:
+  - lessons/1-vibe/rules.png
+  - lessons/1-vibe/overview.png
+  - lessons/1-vibe/weather.png
+  - lessons/1-vibe/modes.png
+  - lessons/1-vibe/contexts.png
+  - lessons/1-vibe/launch-starter.png
+  - lessons/1-vibe/install-cursor.png
+  - lessons/1-vibe/create-tool.png
   - lessons/1-vibe.md
+  - lessons/1-vibe.pdf
 
 2-mcp:
   - lessons/2-mcp.md
