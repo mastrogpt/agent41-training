@@ -1,0 +1,33 @@
+{
+    "python.defaultInterpreterPath": "${env:HOME}/.ops/miniconda3/bin/python",
+    "python.testing.pytestArgs": [
+        "tests"
+    ],
+    "python.testing.unittestEnabled": true,
+    "python.testing.pytestEnabled": true,
+    "markdown.marp.html": "all",
+    "workspaceKeybindings": {
+        "keybindings": [
+            {
+                "key": "ctrl+enter",
+                "command": "workbench.action.terminal.runSelectedText"
+            },
+            {
+                "key": "ctrl+shift+enter",
+                "command": "multiCommand.execToEol",
+                "when": "editorFocus && !findWidgetVisible"
+            }
+        ]
+    },
+    "multiCommand.commands": [
+        {
+            "command": "multiCommand.execToEol",
+            "sequence": [
+                "cursorEndSelect",
+                "workbench.action.terminal.runSelectedText",
+                "cursorLeft",
+                "cursorDown"
+            ]
+        }
+    ]
+}
