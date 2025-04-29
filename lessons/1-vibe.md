@@ -42,6 +42,7 @@ html: true
 
 ![bg 100%](1-vibe/install-cursor.png)
 
+
 ---
 
 ## Setup
@@ -58,6 +59,11 @@ html: true
 1. Clone
 `mastrogpt/agent41-starter`
 1. Open Devcontainer
+
+---
+# `Check Your Server`
+
+![bg 100%](1-vibe/login-and-fixes.png)
 
 ---
 1. Open AI Chat 
