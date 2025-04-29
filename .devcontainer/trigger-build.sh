@@ -1,4 +1,6 @@
-TAG=$(grep 'image: sciabarracom/mastrogpt-starter' docker-compose.yml | awk -F: '{print $3}')
+TAG=$(grep 'mastrogpt/agent41-starter' docker-compose.yml | awk -F: '{print $3}')
+git tag -d $TAG
+git push origin --delete $TAG
 git commit -m "trigger build for $TAG" -a
 git tag $TAG
-echo Ready for $TAG - run 'git  push origin main --tags'
+git push origin main --tags

@@ -6,3 +6,4 @@ site/public/
 *.load
 *.sql
 __pycache__/
+.env

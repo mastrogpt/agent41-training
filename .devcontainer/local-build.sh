@@ -2,12 +2,12 @@
 cd "$(dirname $0)"
 set -a
 source .env
-TAG=$(grep 'image: sciabarracom/mastrogpt-starter' docker-compose.yml | awk -F: '{print $3}')
+TAG=$(grep 'mastrogpt/agent41-starter' docker-compose.yml | awk -F: '{print $3}')
 LATEST=https://api.github.com/repos/apache/openserverless-cli/releases/latest
 OPS_VERSION=$(curl -s "$LATEST" | jq -r '.name | .[1:]')
-DH_USER=nuvolaris
-DH_BUILDER=agent41-builder
-DH_IMAGE=$DH_USER/agent41-starter
+DH_USER=sciabarracom
+DH_BUILDER=openserverless-builder
+DH_IMAGE=$DH_USER/mastrogpt-starter
 DH_TOKEN=${DOCKERHUB_TOKEN:?please set DOCKERHUB_TOKEN in .env} 
 docker login -u "$DH_USER" -p "$DH_TOKEN"
 docker buildx create  --driver cloud $DH_USER/$DH_BUILDER

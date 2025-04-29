@@ -1,5 +1,5 @@
 {
-	"name": "MastroGPT",
+	"name": "Agent41",
 	"dockerComposeFile": ["docker-compose.yml"],
 	"service": "app",
 	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
@@ -10,7 +10,7 @@
     "remoteEnv": {
         "OPS_BRANCH": "main"
     },
-	"postCreateCommand": "ops -update ; ops -plugin https://github.com/mastrogpt/olaris-ai ; ops -plugin https://github.com/mastrogpt/olaris-a41 ; ops a41 lesson",
+	"postCreateCommand": "ops -update ; ops -plugin https://github.com/mastrogpt/olaris-ai ; ops -plugin https://github.com/mastrogpt/olaris-a41 ; ops ai lesson ; ops a41 lesson",
 	"customizations": {
 		"vscode": {
 			"extensions": [
@@ -21,7 +21,8 @@
 				"marp-team.marp-vscode",
 				"ryuta46.multi-command",
 				"george-alisson.html-preview-vscode",
-				"mathematic.vscode-pdf"
+				"mathematic.vscode-pdf",
+				"littlefoxteam.vscode-python-test-adapter"
 			]
 		}
 	}
