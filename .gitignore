@@ -5,4 +5,4 @@ site/public/
 .venv/
 *.load
 *.sql
-**/__pycache_/
+__pycache__/
