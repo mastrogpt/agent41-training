@@ -129,61 +129,50 @@ html: true
 
 ---
 
-![bg right:50% 50%](1-vibe/create-tool.png)
+ ###### Demo of tool creation
 
-### Create Weather Tool
+1. Clean the chat
+2. Manual: Create a tool, a Demo Tool
+3. Restore checkpoint
+4. Ask: create a demo tool
+6. Agent: create a demo tool
+5. Test it
+6. Deploy it
 
-- `create a tool named weather`
-  - **use a rule**
-- `access to a service to get the wether in a location`
-  - **asks a a question**
-- `use openweather`
-
-  - **my answer**
-
-
+![bg right:60% 90%](1-vibe/create-a-demo.png)
 ---
 
-#### Implement Weather Tool
-
-![bg right:50% 70%](1-vibe/weather.png)
-
-- `read the api key`
-
-- `make a request to openwhethermap and retrieve the wheather for a given location`
-
-- `add to the index`
-
-- test and deploy
-
---- 
-
-# Use Ollama to Parse Time
-
-
-- `write a function ask_ollama to ask using model llama3.1:8b  and return its anwser`
-
-  - it should select or use the `ollama` rule
-   
-
-- `write parse_time_and_location invoking ask_ollama assuming it is a request for a wheather prediction at a given location and optionally a time. Return the answer as a tuple with 3 values: the location of the request, the time of the request as a number of in hours in advance from now,  and the number of days in advance. Default to 0 for both if not specified`
-
---- 
-#  Parse Time fixes and tests
-
-- LLM does not know the current day and time we have to specify it
-  - `provide the current time and date to the prompt`
-
-- Sometimes the output is not a json object but is is embedded:
-  - `check the respnse and extract a json object if it is embedded in the answer`
-
-- We need to add tests:
-  - `write tests to check form London, London tomorrow moning, Paris next Week and Moscow in the night`
+- Demo Manual: create demo tool
+  - Remove past chats
+  - Create a demo tool in Manual mode
+     -  The AI does not follow our rules
+  - Restore Checkpoint
+- Demo Ask: create demo tool
+  - AI finds our rules
+  - Note it needs the context to process
 
 ---
+# Demo Agentic: create a demo tool
+  - AI finds our rules
+  - Agent **EXECUTES** our rules
+  - Further decisions depends on the results
+  - AI can make mistakes:
+     - Not applying all the rules
+     - Taking decions on unspecified behaviour
+ 
 
-## Close the loop fixing the `weather` function
 
-`Change the weather function to use the parse_and_time location and use always a forecast. In the result answer specify the date and time for the forecast in the local time.`
+----
 
-`write tests for London, London tomorrow, Paris next week`
+#### Demo Ollama:
+  - Create a demo chat
+  - Follows our rules
+    - ollama.mdc
+  - Makes a mistake on the API
+    - Our rule does not specify which API to use
+    - We need a manual fix
+
+![bg left:50% 100%](1-vibe/build-an-ai-with-vibe.png)
+
+
+

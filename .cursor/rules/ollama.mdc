@@ -10,7 +10,7 @@ To use ollama, add in  `__main__.py` the metadata to retrive the secrets:
 
 When you need to access Ollama, retrieve the secrets from args and build the url f"https://{AUTH}@{OLLAMA_HOST}".
 
-Use requests and the url to invoke the Ollama API.
+Use requests and the url to invoke the Ollama API. 
 
 By default add stream=false to API requests.
 

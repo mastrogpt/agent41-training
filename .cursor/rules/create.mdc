@@ -5,18 +5,17 @@ alwaysApply: false
 ---
 When requested to create a tool, a resource or a prompt  ask or deduct the <name> and optionally the <package> (assume <package> = <name> if not specified). 
 
-If they ask for a generic action consider it a tool.
+When requested to create an action, create  a tool.
 
-Do not use `pip import` or a `requirements.txt`, assume you have the required libraries
+Do not use `pip import` or a `requirements.txt`, assume you have the required libraries.
 
-Use the command
+Use the command:
 
-  ops a41 new <package> <description> (--prompt=<name>|--tool=<name>|--resource=<name>) [--redis] [--postgres] [--milvus] [--s3]
+  ops a41 new <package> <description> (--prompt=<name>|--tool=<name>|--resource=<name>) [--postgres] [--milvus] [--s3]
 
 Specify `--postgres` if you need to uses a database
 Specify `--milvus` if you need to use a vector database
 Specify `--s3` if you need to use object storate
-Specify `--redis` if you need to use redis cache
 
 It should generate the files:
 

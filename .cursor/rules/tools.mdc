@@ -1,0 +1,20 @@
+---
+description: when implementing a tool or an action
+globs: 
+alwaysApply: false
+---
+Assume the input is a dict and the result must also be a dict.
+
+Get the user input from the field `input` as a string.
+Always return the result as a dict, with a field `output` that must be a string. Use `output` also to return errors.
+
+You can add additional results in the result dict. 
+If you produce a html result, put it in an `html` field in the result dict. 
+
+
+Use only Postgres as Relational Database, do not use sqlite. Use Milvus as Vector Database, do not use others.
+
+Assume you have already available the library `requests` for REST apis, `redis` for redis, `psycopg` for postgres, `boto3` for s3,  `pymilvus` for Miluvs, and `openai` for AI requests. 
+
+Do not try to add other libraries with `pip` or a `requirements.txt`
+
