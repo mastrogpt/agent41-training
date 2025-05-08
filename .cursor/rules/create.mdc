@@ -5,10 +5,6 @@ alwaysApply: false
 ---
 When requested to create a tool, a resource or a prompt  ask or deduct the <name> and optionally the <package> (assume <package> = <name> if not specified). 
 
-When requested to create an action, create  a tool.
-
-Do not use `pip import` or a `requirements.txt`, assume you have the required libraries.
-
 Use the command:
 
   ops a41 new <package> <description> (--prompt=<name>|--tool=<name>|--resource=<name>) [--postgres] [--milvus] [--s3]
@@ -16,6 +12,8 @@ Use the command:
 Specify `--postgres` if you need to uses a database
 Specify `--milvus` if you need to use a vector database
 Specify `--s3` if you need to use object storate
+
+Do not use `pip import` or a `requirements.txt`, assume you have the required libraries.
 
 It should generate the files:
 

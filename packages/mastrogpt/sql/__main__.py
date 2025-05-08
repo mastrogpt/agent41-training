@@ -12,11 +12,11 @@ def main(args):
   if "__ow_method" in args:
     import os, redis
     token = args.get("token", "_:_")
-    print(token)
+    #print(token)
     [user, secret] = token.split(":")
     rd = redis.from_url(args.get("REDIS_URL"))
     check = rd.get(f"{args.get("REDIS_PREFIX")}TOKEN:{user}") or b''
-    print(check)
+    #print(check)
     if check.decode() == secret:
         return { "body": sql.sql(args) }
     return {"body": "unauthorized"}

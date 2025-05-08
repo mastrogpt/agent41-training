@@ -28,9 +28,12 @@ tests/mastrogpt/test_hello_int.py
 tests/mastrogpt/test_hello.py
 tests/mastrogpt/test_sql.py
 .cursor/rules/create.mdc
+.cursor/rules/deploy.mdc
 .cursor/rules/ollama.mdc
 .cursor/rules/secrets.mdc
 .cursor/rules/actions.mdc
+.cursor/rules/tests.mdc
+.cursor/rules/tools.mdc
 lessons/assets/starter.png
 lessons/assets/logo-nuvolaris-agent41.png
 lessons/assets/openserverless-logo.png

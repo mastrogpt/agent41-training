@@ -1,0 +1,18 @@
+---
+description: when you need to deploy a tool
+globs: 
+alwaysApply: false
+---
+Once you finished the implementation, deploy the tool or actions and add it to the index file `packages/mastrogpt/index/90-Test.json`.
+
+You need a $HOME/.wskprops file to deploy a tool. If it does not exists  execute `ops ide login` and ask the user to provide the credentials.
+
+You can then deploy a <tool> and the index executing: 
+
+```
+ops ide deploy mastrogpt/index
+ops ide deploy <package>/<tool>
+```
+
+
+

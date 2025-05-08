@@ -1,0 +1,24 @@
+---
+description: 
+globs: tests/**/test_*.py
+alwaysApply: false
+---
+Before running tests execute `ops ide login` and ask user to provide the credentials.
+
+When you need  to test a <module> of <tool> in <package> , access the modules with:
+
+```
+import sys
+sys.path.append("packages/<package>/<tool>")
+import <module>
+```
+
+Do not use mocks or stubs, use the actual services in preferences. Ask the user to provide the secrets adding them to `.env`.
+
+Assume you can access relevant services (redis, postgres, milvus, s3) using environment variables that are provided.
+
+Test the <function>s and <class>ess in the <module> referring to them as
+
+<module>.<function> or <module>.<class>
+
+

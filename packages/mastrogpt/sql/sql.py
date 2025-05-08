@@ -73,13 +73,16 @@ def query(dburl, sql):
 def sql(args):
     dburl = args.get("POSTGRES_URL", os.getenv("POSTGRES_URL"))
     sql = args.get("input", "")
-    res = {"error": "No SQL query provided."}
+    res =  {"Welcome": "specify a SQL query or '@' to list tables"}
     if sql != "":
-        lines = sql.split("\n")
+        if sql == "@":
+            lines = ["select table_schema, table_name from information_schema.tables where table_type = 'BASE TABLE' and table_schema not in ('pg_catalog', 'information_schema')"]
+        else: 
+            lines = sql.split("\n")
         if len(lines) == 1:
             res = query(dburl, lines[0])
         else:
-            print(lines)
+            #print(lines)
             for line in lines:
                 print(line)
                 res = query(dburl, line)
@@ -90,3 +93,4 @@ def sql(args):
         res = to_html(res)
 
     return res
+

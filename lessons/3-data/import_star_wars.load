@@ -1,7 +1,0 @@
-LOAD DATABASE
-    FROM sqlite:///workspaces/agent41-training/lessons/4-data/star_wars.db
-    INTO postgresql://postgres:postgres@postgres:5432/postgres
-
-WITH include drop, create tables, create indexes, reset sequences
-
-SET work_mem to '16MB', maintenance_work_mem to '512 MB';
