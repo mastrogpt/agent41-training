@@ -7,3 +7,8 @@ site/public/
 *.sql
 __pycache__/
 .env
+.svelte-kit/
+web/_app/
+web/index.html
+node_modules/
+bun.lock
