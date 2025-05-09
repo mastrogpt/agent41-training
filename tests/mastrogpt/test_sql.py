@@ -5,7 +5,7 @@ import sql as m
 def test_dbquery():
     args = {}
     result = m.sql(args)
-    assert "error" in result
+    assert "Welcome" in result
 
     sql = "create table test (id int, name varchar(255))"
     args = {"input": sql}

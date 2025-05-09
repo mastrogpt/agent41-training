@@ -1,11 +1,7 @@
 [
     {
-    "name": "Hello",
-    "url": "mastrogpt/hello"
-   },
-   {
-    "name": "Demo",
-    "url": "mastrogpt/demo"
+    "name": "Chat",
+    "url": "mastrogpt/stateless"
    },
    {
     "name": "Postgres",
@@ -16,7 +12,15 @@
     "url": "mastrogpt/cache"
    },
    {
-    "name": "Text Processor",
-    "url": "demo/demo"
+    "name": "S3",
+    "url": "mastrogpt/store"
+   },
+   {
+    "name": "Milvus",
+    "url": "mastrogpt/loader"
+   },
+   {
+    "name": "Display",
+    "url": "mastrogpt/demo"
    }
 ]
