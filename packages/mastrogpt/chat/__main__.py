@@ -2,6 +2,6 @@
 #--web true
 #--param OLLAMA_HOST $OLLAMA_HOST
 #--param AUTH $AUTH
-import stateless
+import chat
 def main(args):
-  return { "body": stateless.stateless(args) }
+  return { "body": chat.chat(args) }

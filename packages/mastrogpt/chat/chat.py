@@ -33,7 +33,7 @@ def stream(args, lines):
       out = str(e)
   return out
 
-def stateless(args):
+def chat(args):
   global MODEL
   llm = url(args)
   out = f"Welcome to {MODEL}"

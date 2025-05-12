@@ -1,8 +1,5 @@
 #--kind python:default
 #--web true
-#-a mcp:type tool
-#-a mcp:desc "Tool_for_querying_the_database"
-#-a input:str "the user input (default='')"
 #-p POSTGRES_URL "$POSTGRES_URL"
 #-p REDIS_URL "$REDIS_URL"
 #-p REDIS_PREFIX "$REDIS_PREFIX"
