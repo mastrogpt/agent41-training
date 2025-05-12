@@ -12,3 +12,4 @@ web/_app/
 web/index.html
 node_modules/
 bun.lock
+login.sh

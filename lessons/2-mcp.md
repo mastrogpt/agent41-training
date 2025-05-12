@@ -11,12 +11,13 @@ html: true
 ---
 ![bg left:50% 90%](assets/logo-nuvolaris-agent41.png)
 
-#### Training Course
+#### Agent41 Course
 <center>
 <img width="90%"src="assets/openserverless-logo.png">
 </center>
 
-####  Build your Serverless **Private AI Agent**
+### **Lesson 2**
+####  MCP Protocol
 
 <center>
 <img width="85%"src="assets/image-agent41.png">
@@ -24,4 +25,33 @@ html: true
 
 
 ---
+
+# What is MCP Protocol
+
+
+![bg left:50% 80%](2-mcp/mcp-protocol.png)
+
+---
+
+# Agent41
+
+![bg 90%](2-mcp/agent41.png)
+
+---
+
+# Installing an MCP Server in Cursor
+
+
+---
+
+# Installing an MCP Server in 5sire
+
+---
+
+# Using agent 41
+
+
+---
+
+# Installing agent 41
 

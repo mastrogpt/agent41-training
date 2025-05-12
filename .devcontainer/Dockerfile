@@ -30,6 +30,11 @@ RUN \
     locale-gen en_US.UTF-8 && \
     update-locale ANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8 LC_ALL=en_US.UTF-8
 
+RUN \
+    curl -LsSf https://astral.sh/uv/install.sh | sh ;\
+    mv $HOME/.local/bin/uv /usr/local/bin/uv ;\
+    mv $HOME/.local/bin/uvx /usr/local/bin/uvx 
+
 # Ensure default `node` user has access to `sudo`
 ARG USERNAME=node
 RUN \
