@@ -8,6 +8,11 @@ packages/mastrogpt/demo/demo.py
 packages/mastrogpt/demo/__main__.py
 packages/mastrogpt/cache/cache.py
 packages/mastrogpt/cache/__main__.py
+packages/mastrogpt/chat/chat.py
+packages/mastrogpt/chat/__main__.py
+packages/mastrogpt/loader/vdb.py
+packages/mastrogpt/loader/loader.py
+packages/mastrogpt/loader/__main__.py
 packages/mastrogpt/index/90-Test.json
 packages/mastrogpt/index/__main__.py
 packages/mastrogpt/display/message.html
@@ -15,11 +20,11 @@ packages/mastrogpt/display/html.html
 packages/mastrogpt/display/editor.html
 packages/mastrogpt/display/display.py
 packages/mastrogpt/display/__main__.py
-packages/mastrogpt/hello/hello.py
-packages/mastrogpt/hello/__main__.py
 packages/mastrogpt/login/users.json
 packages/mastrogpt/login/login.py
 packages/mastrogpt/login/__main__.py
+packages/mastrogpt/store/store.py
+packages/mastrogpt/store/__main__.py
 packages/mastrogpt/sql/sql.py
 packages/mastrogpt/sql/__main__.py
 tests/.env

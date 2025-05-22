@@ -41,6 +41,9 @@ html: true
 
 # Installing an MCP Server in Cursor
 
+```
+
+```
 
 ---
 
