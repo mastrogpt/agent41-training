@@ -1,6 +1,7 @@
 pytest.ini
 .devcontainer/devcontainer.json
 .devcontainer/docker-compose.yml
+.devcontainer/Dockerfile
 web/favicon.ico
 web/index.html
 packages/.env
@@ -29,9 +30,12 @@ packages/mastrogpt/sql/sql.py
 packages/mastrogpt/sql/__main__.py
 tests/.env
 tests/conftest.py
+tests/mastrogpt/test_cache.py
 tests/mastrogpt/test_hello_int.py
 tests/mastrogpt/test_hello.py
+tests/mastrogpt/test_loader.py
 tests/mastrogpt/test_sql.py
+tests/mastrogpt/test_store.py
 .cursor/rules/create.mdc
 .cursor/rules/deploy.mdc
 .cursor/rules/ollama.mdc
